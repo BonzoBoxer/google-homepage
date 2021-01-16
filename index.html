@@ -3,6 +3,39 @@
 <head>
     <title>Google</title>
     <style>
+        li {
+            width: max-content;
+            height: fit-content;
+            display: inline-grid;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            color: #000;
+            opacity: 0.75;
+            padding-top: 10px;
+        }
+        #leftnavbar {
+            width: fit-content;
+            position: absolute;
+            left: 25px;
+            top: 15px;
+        }
+        #rightnavbar {
+            width: fit-content;
+            position: absolute;
+            right: 150px;
+        }
+        #signin {
+            width: fit-content;
+            position: absolute;
+            right: 80px;
+        }
+        a:link {
+            text-decoration: none;
+            color: #000;
+        }
+        a:visited {
+            color: #000;
+        }
         .gglmain {
             display: flex;
             flex-direction: column;
@@ -14,14 +47,25 @@
             padding-bottom: 25px;
         }
         #gglsearch {
-            width: 427px;
-            height: 44px;
+            width: 484px;
+            height: 46px;
             border: 1px solid #dfe1e5;
             border-radius: 24px;
         }
     </style>
 </head>
 <body>
+    <ul>
+        <div id="leftnavbar">
+            <li><a href="#About">About</a></li>
+            <li><a href="#Store">Store</a></li>
+        </div>
+    <div id="rightnavbar">
+        <li><a href="#Gmail">Gmail</a></li>
+        <li><a href="#Images">Images</a></li>
+    </div>
+        <li id="signin"><a href="#signin">Sign in</a></li>
+    </ul>
     <div class="gglmain">
     <img src="googlelogo_color_272x92dp.png" alt="Google logo">
     <form>
