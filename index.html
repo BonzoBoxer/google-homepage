@@ -13,21 +13,52 @@
             opacity: 0.75;
             padding-top: 10px;
         }
-        #leftnavbar {
+        .leftnavbar {
             width: fit-content;
             position: absolute;
             left: 25px;
             top: 15px;
         }
-        #rightnavbar {
+        #store {
+            position: absolute;
+            top: 10px;
+            left: 50px;
+        }
+        .rightnavbar {
             width: fit-content;
             position: absolute;
             right: 150px;
+            top: 15px;
+        }
+        #gmail {
+            position: absolute;
+            top: 10px;
+            right: 65px;
+        }
+        #images {
+            position: absolute;
+            top: 10px;
+            right: 5px;
         }
         #signin {
             width: fit-content;
             position: absolute;
-            right: 80px;
+            right: 33px;
+            top: 18px;
+            border: 1px solid #81b0fc;
+            border-radius: 2px;
+            padding-top: 6px;
+            padding-left: 12px;
+            padding-bottom: 6px;
+            padding-right: 12px;
+            font-weight: bold;
+            color: #ffffff;
+            opacity: 1;
+            background: -moz-linear-gradient(top, hsl(218, 98%, 50%), hsl(218, 80%, 50%))
+        }
+        #signin:visited {
+            color: white;
+            background: -moz-linear-gradient(top, #4387fd, #4683ea);
         }
         a:link {
             text-decoration: none;
@@ -56,15 +87,17 @@
 </head>
 <body>
     <ul>
-        <div id="leftnavbar">
+        <div class="navbarw/osignin">
+        <div class="leftnavbar">
             <li><a href="#About">About</a></li>
-            <li><a href="#Store">Store</a></li>
+            <li><a id="store" href="#Store">Store</a></li>
         </div>
-    <div id="rightnavbar">
-        <li><a href="#Gmail">Gmail</a></li>
-        <li><a href="#Images">Images</a></li>
+    <div class="rightnavbar">
+        <li><a id="gmail" href="#Gmail">Gmail</a></li>
+        <li><a id="images" href="#Images">Images</a></li>
     </div>
-        <li id="signin"><a href="#signin">Sign in</a></li>
+        </div>
+        <li><a id="signin" href="#signin">Sign in</a></li>
     </ul>
     <div class="gglmain">
     <img src="googlelogo_color_272x92dp.png" alt="Google logo">
